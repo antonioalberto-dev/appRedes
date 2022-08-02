@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
+:root {
+  --primary-color: rgb(122, 13, 127);
+  --secondary-color: rgba(229, 71, 237, 0.792);
+}
+
 * {
   font-family: "Poppins", sans-serif;
 }
@@ -24,7 +29,7 @@
 }
 
 input {
-  margin-left: 10px;
+  margin: 10px 0 10px 10px;
   border-radius: 10px;
   padding: 4px;
   margin-top: 10px;
@@ -32,17 +37,42 @@ input {
   text-align: center;
 }
 
-h4 {
+h3 {
   text-align: center;
   margin: 5px 0;
 }
 
-button{
+/* button{
     background-color: darkslateblue;
     color: #fff;
     border-radius: 10px;
     margin: 5px 10px;
     border: 2px solid darkslateblue;
+    margin-bottom: 30px;
+} */
+
+.button {
+  width: 80%;
+  max-width: 400px;
+  height: 40px;
+  background: var(--primary-color);
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  margin: 16px auto;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  /* font-size: 18px; */
+  /* line-height: 60px; */
+  transition: filter 0.2s;
+  border-radius: 25px;
+  box-shadow: 0px 2px 6px #2522229d;
+}
+
+.button:hover {
+  filter: brightness(90%);
 }
 
 .btn-reset{
@@ -57,4 +87,32 @@ button{
 .inputData{
     margin: 0 auto;
     width: 65%; /* Valor da Largura */
+}
+
+.alert {
+  display: block;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: large;
+  position: fixed;
+  bottom: 10px;
+  right: 0;
+  box-shadow: 0 0 4px #333;
+}
+
+.warning {
+  background-color: #e8263c;
+  color: white;
+  font-weight: bold;
+  bottom: 100px;
+  width: 100%;
+  height: 80px;
+}
+
+.result {
+  /* font-family: "IBM Plex Mono", monospace; */
+  overflow-wrap: break-word;
+  padding: 30px;
 }
