@@ -9,10 +9,13 @@
   font-family: "Poppins", sans-serif;
 }
 
+body{
+  background: rgba(151, 140, 218, 0.249);
+}
+
 .container {
   width: 100%;
-  height: 97.8vh;
-  background: rgba(151, 140, 218, 0.249);
+  height: 89.8vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -42,15 +45,6 @@ h3 {
   text-align: center;
   margin: 5px 0;
 }
-
-/* button{
-    background-color: darkslateblue;
-    color: #fff;
-    border-radius: 10px;
-    margin: 5px 10px;
-    border: 2px solid darkslateblue;
-    margin-bottom: 30px;
-} */
 
 .button {
   width: 80%;
@@ -112,12 +106,19 @@ h3 {
 }
 
 .result {
-  /* font-family: "IBM Plex Mono", monospace; */
   overflow-wrap: break-word;
   padding: 0 30px;
-  background-color: #fff;
-  /* margin-right: 40px;
-  /* border-radius: 18px;
-  box-shadow: 0px 2px 6px #2522229d; */
+  /* background-color: rgba(217, 103, 221, 0.192); */
+  font-size: 14px;
+  /* border-radius: 18px; */
+  padding: 5px 30px;
+}
+
+.footer-github{
   text-align: center;
+  margin: 10px 0;
+  background-color: rgba(51, 51, 51, 0.371);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 7.5px 0;
 }
